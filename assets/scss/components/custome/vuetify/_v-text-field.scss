@@ -1,0 +1,93 @@
+.custom_input {
+  margin-bottom: 10px;
+
+  label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+
+    span.asterisk {
+      height: fit-content;
+      margin-inline-start: 2px;
+    }
+  }
+
+  .v-input {
+    .v-input__control {
+      .v-field {
+        border: 1px solid var(--border);
+        background: var(--input_bg);
+        border-radius: 10px;
+        box-shadow: none;
+        height: var(--input_height);
+        align-items: center;
+
+        .v-field__overlay {
+        }
+
+        .v-field__loader {
+        }
+        .v-field__field {
+          label {
+          }
+
+          input {
+          }
+        }
+
+        .v-field__clearable {
+        }
+
+        .v-field__outline {
+          .v-field__outline__start {
+          }
+          .v-field__outline__end {
+          }
+        }
+      }
+    }
+
+    .v-input__details {
+      overflow: visible !important;
+      .v-messages {
+        & > div:first-child {
+          // margin-bottom: 15px;
+        }
+      }
+    }
+
+    &.dark {
+      .v-input__control {
+        .v-field {
+          // border: 1px solid #39383882;
+          // background: #333;
+          // color: #fff;
+        }
+      }
+    }
+  }
+
+  &.out_filter_input {
+    .v-input {
+      .v-input__control {
+        .v-field {
+          border: unset !important;
+        }
+      }
+    }
+  }
+
+  &.textarea {
+    .v-input {
+      .v-input__control {
+        .v-field {
+          height: unset !important;
+        }
+      }
+    }
+
+    &.select {
+    }
+  }
+}
